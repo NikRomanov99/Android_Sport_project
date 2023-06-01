@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="some_id">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">#FFFCFC</item>
+    </style>
+    <style name="shapka">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#FFFCFC</item>
+    </style>
+
+    <style name="Text_low_Screen3">
+        <item name="android:textSize">
+            14sp
+        </item>
+        <item name="android:textColor">
+            #DCC275
+        </item>
+    </style>
+
+    <style name="Text_high_Screen3">
+    <item name="android:textSize">
+        20sp
+    </item>
+    <item name="android:textColor">
+        #F6E4BD
+    </item>
+</style>
+
+    <style name="ResultTEXT">
+        <item name="android:textSize">
+            25sp
+        </item>
+        <item name="android:textColor">
+            #ED981E19
+        </item>
+    </style>
+
+
+</resources>

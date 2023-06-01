@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:width="250dp"
+    android:height="250dp"
+    tools:ignore="ExtraText">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:textAppearance="@style/ResultTEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/resultMatch" />
+
+    </TableRow>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="#00f29496"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/layoutTitle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_weight="14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtMatchTitle"
+                android:layout_width="35dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/match_title"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_devider" />
+
+            <TextView
+                android:id="@+id/txtFirstTeam"
+                android:layout_width="70dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="@string/team_one_title"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_devider" />
+
+            <TextView
+                android:id="@+id/txtScore"
+                android:layout_width="35dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/score_title"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_devider" />
+
+            <TextView
+                android:id="@+id/txtSecondTeam"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_gravity="center"
+                android:text="@string/team_two_title"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_devider" />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_gravity="center"
+                android:text="@string/date_title"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/custom_devider"
+            android:foregroundGravity="fill_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutTitle"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMain"
+
+            android:layout_marginTop="1dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintTop_toBottomOf="@+id/layoutTitle" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</TableLayout>
+

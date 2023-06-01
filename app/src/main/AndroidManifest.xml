@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android_sport_project">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:icon="@drawable/logo_app"
+        android:label="Спорт Табло">
+        <activity android:screenOrientation="locked" android:theme="@style/AppTheme4" android:name=".game_counter.VolleyballCounter" />
+        <activity android:screenOrientation="locked" android:theme="@style/AppTheme4" android:name=".game_counter.BasketballCounter" />
+        <activity android:screenOrientation="locked" android:theme="@style/AppTheme4" android:name=".game_counter.FootballCounter" />
+        <activity android:screenOrientation="locked" android:theme="@style/AppTheme4" android:name=".game_start.VolleyballStarter" />
+        <activity android:screenOrientation="locked" android:theme="@style/AppTheme4" android:name=".game_start.BasketballStarter" />
+        <activity android:screenOrientation="locked" android:theme="@style/AppTheme4" android:name=".game_start.FootballStarter" />
+        <activity android:screenOrientation="locked" android:theme="@style/AppTheme4" android:name=".rules.VolleyballRules" />
+        <activity android:screenOrientation="locked" android:theme="@style/AppTheme4" android:name=".rules.BasketballRules" />
+        <activity android:screenOrientation="locked" android:theme="@style/AppTheme4" android:name=".rules.FootballRules" />
+        <activity android:screenOrientation="locked" android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:screenOrientation="locked" android:theme="@style/AppTheme4" android:name=".Menu" />
+        <activity android:theme="@style/result_table" android:name=".result_page.Results" />
+        <activity android:theme="@style/result_table" android:name=".FinalScreen" />
+    </application>
+
+</manifest>
